@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="Data Kewarganegaraan Indonesia:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Input Fields -->
+        <EditText android:id="@+id/etNama"
+            android:hint="Nama Lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etNIK"
+            android:hint="NIK"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etKabupaten"
+            android:hint="Kabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/etKecamatan"
+            android:hint="Kecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etDesa"
+            android:hint="Desa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etRT"
+            android:hint="RT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etRW"
+            android:hint="RW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:text="Jenis Kelamin:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbLaki"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Laki-Laki"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbPerempuan"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+        <!-- Status Pernikahan -->
+        <TextView
+            android:text="Status Pernikahan:"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Tombol -->
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#006400"
+            android:textColor="@android:color/white"
+            android:text="Simpan Data" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8B0000"
+            android:textColor="@android:color/white"
+            android:text="Reset Data" />
+
+        <!-- Daftar -->
+        <TextView
+            android:id="@+id/tvDaftar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Daftar Warga Negara:"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
